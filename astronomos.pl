@@ -1,40 +1,50 @@
+%Resolvedor do problema disponível em: https://rachacuca.com.br/logica/problemas/astronomos-amadores/
+%Há cinco astrônomos, possuindo seis atributos cada.
+%Cada atributo possui cinco valores possíveis, que não podem ser repetidos entre astrônomos.
+
+%Cor da camisa
 camisa(amarela).
 camisa(azul).
 camisa(verde).
 camisa(branca).
 camisa(vermelha).
 
+%Nome
 nome(alan).
 nome(cleber).
 nome(luis).
 nome(milton).
 nome(vinicius).
 
+%Idade
 idade(27).
 idade(29).
 idade(32).
 idade(33).
 idade(35).
 
+%Constelação a que observa
 constelacao(andromeda).
 constelacao(aries).
 constelacao(orion).
 constelacao(escorpiao).
 constelacao(pegasus).
 
-altura(166). %altura em centímetros
+%Altura (em centímetros)
+altura(166).
 altura(170).
 altura(172).
 altura(175).
 altura(181).
 
+%Esporte do qual gosta
 esporte(futebol).
 esporte(basquete).
 esporte(volei).
 esporte(natacao).
 esporte(sinuca).
 
-%X está à ao lado de Y
+%X está ao lado de Y
 aoLado(X,Y,Lista) :- nextto(X,Y,Lista);nextto(Y,X,Lista).
                        
 %X está à esquerda de Y (em qualquer posição à esquerda)
